@@ -7,6 +7,11 @@ html, body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 #container { 
     width: 100%;  
     height: 100%; 
@@ -16,7 +21,7 @@ html, body {
  
 #container > #wrap {
     position: relative;
-    width: 1000px;
+    width: 900px;
     height: 100%;
     margin: auto;
 }
@@ -24,9 +29,9 @@ html, body {
 aside {
     position: absolute;
     float: left;
-    width: 30%;
+    width: 35%;
     height: 100%;
-    background-color: gray;
+    background-color: #b1b1b1;
     color: white;
 }
 
@@ -39,11 +44,11 @@ aside > #profile > #profileImg {
 
 aside > #profile h1 {   
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 aside #profileList {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -71,12 +76,13 @@ section {
 }
 
 section > #sectionWrap {
-    padding: 20px;
+    padding: 20px; 
 }
 
 
 .content {
     padding: 20px;
+    padding-bottom: 30px;
     margin: 20px;
     border-bottom: 1px solid black; 
 }
@@ -85,9 +91,87 @@ section > #sectionWrap {
 
 }
 
-#interest {
+#skil > h2 {
+    margin-bottom: 20px;
+}
 
+#skil-bow-wrap {
+    display: flex;
+    justify-content: space-around;
+} 
+
+.skil-box {  
+    justify-content: center; 
+}
+
+.skil-box ul {
+    margin-top:10px;
+    margin-left: 15px;
+    line-height: 27px;
 }
 
 
- 
+
+#interest > h2 {
+    margin-bottom: 20px;
+}
+
+#interest-box-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.interest-box {  
+    justify-content: center; 
+}
+
+.interest-box ul { 
+    line-height: 27px;
+}
+
+.interest-box ul > a {
+    font-size:17px;
+    color: rgb(69, 69, 125);
+}
+
+.interest-box ul > a:hover {
+    color:rgb(206, 56, 56);
+}
+
+.interest-box ul > li {
+    margin-left: 15px;
+}
+
+
+
+
+
+.subtitle {
+    font-size:1.5em;
+    /* padding-left:45px; */
+    line-height:0.9em;
+}
+.subtitle::before {
+    content:"";
+    display:block;
+    background:url("../images/note.png") no-repeat;
+    width:24px;
+    height:24px;
+    float:left;
+    margin:0 15px 0 0;
+}
+section > p {
+    font-size:0.9em;
+}
+
+.label {
+    display:inline-block;
+    width:80px;
+    color:purple;
+    font-weight:bold;
+}
+
+meter {
+    width:200px;
+    margin-right:10px;    
+}
