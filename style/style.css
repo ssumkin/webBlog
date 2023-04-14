@@ -15,7 +15,7 @@ a {
 #container { 
     width: 100%;  
     height: 100%; 
-    background-color: black;
+    background-color: #565656;
 }
 
  
@@ -29,66 +29,76 @@ a {
 aside {
     position: absolute;
     float: left;
-    width: 35%;
-    height: 100%;
+    width: 30%;
+    height: 100%; 
     background-color: #b1b1b1;
     color: white;
 }
 
-aside > #profile > #profileImg {
-    width: 180px; 
-    margin: 0 auto; 
-    margin-top: 120px;
-    overflow: hidden;
-}
-
-aside > #profile h1 {   
-    text-align: center;
-    font-size: 25px;
-}
-
-aside #profileList {
-    width: 65%;
+aside > #profile {
+    width: 70%;
     margin: 0 auto;
+    margin-top: 70px;
+} 
+
+aside > #profile img { 
+    width: 100%; 
+    border-radius: 5px;
+}
+ 
+
+aside #profileSNS > h1 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+aside #profileSNS > a {
+    color: white;
+}
+
+aside #profileSNS > a:hover {
+    color: rgb(197, 76, 76);
+}
+
+aside #profileList { 
     margin-top: 50px;
 }
 
 aside ul {
     list-style: none;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 27px;
 }
-
-aside > #profile img { 
-    width: 100%; 
-}
-
-
-
-
+ 
 section {
     position: relative;
     float: right;
     width: 70%;
     height: 100%;
-    background-color: white;
-    overflow: hidden;
+    background-color: white; 
 }
 
 section > #sectionWrap {
     padding: 20px; 
+    padding-bottom: 0;
 }
 
 
-.content {
-    padding: 20px;
+section .content {
+    padding: 15px;
     padding-bottom: 30px;
     margin: 20px;
     border-bottom: 1px solid black; 
 }
 
-#spec {
+section #spec {
+    margin-bottom: 10px;
+}
 
+section #spec p {
+    margin-top:5px;
+    margin-left: 20px;
 }
 
 #skil > h2 {
@@ -145,33 +155,23 @@ section > #sectionWrap {
 
 
 
+ 
 
-.subtitle {
-    font-size:1.5em;
-    /* padding-left:45px; */
-    line-height:0.9em;
-}
-.subtitle::before {
-    content:"";
-    display:block;
-    background:url("../images/note.png") no-repeat;
-    width:24px;
-    height:24px;
-    float:left;
-    margin:0 15px 0 0;
-}
-section > p {
-    font-size:0.9em;
+#food table {
+    width:70%;
+    border:1px solid #222;
+    border-collapse: collapse; 
+    margin: auto;
+    margin-top: 25px;
 }
 
-.label {
-    display:inline-block;
-    width:80px;
-    color:purple;
-    font-weight:bold;
+#food thead {
+    background:#eee; 
 }
 
-meter {
-    width:200px;
-    margin-right:10px;    
+#food th, td {
+    border:1px solid #ccc;
+    padding:5px; 
+    font-size:0.8em; 
+    text-align: center;
 }
